@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Nov 12 15:43:35 CET 2020:
+ Iniciando instancia a816c00e-0175-bce9-6b0b-000005df6a58 de Derby, versión The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): 
+en el directorio de base de datos C:\Users\software\db-derby-10.14.2.0-bin\basesDatos\simpleDBmia con el cargador de clases sun.misc.Launcher$AppClassLoader@73d16e93
+Cargado desde file:/C:/Users/software/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=C:\Users\Usuario\Dropbox\miscelanea\DSSBCS\practicas\practicas-2020\workspace\p2-bis\jpa.simple
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Cargador de clases de base de datos iniciado - derby.database.classpath=''

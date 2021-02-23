@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Tienda de ordenadores</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<h1>Tienda de ordenadores</h1>
+	<h3>Vista de Administrador</h3>
+
+	<div>
+		<h4>Lista de productos</h4>
+		<div id="productos"></div>
+	</div>
+
+
+	<div id="na">
+		<form id="nuevo_producto">
+
+			<table>
+				<tr>
+					<th>
+						<label for="nombre">Nombre</label>
+						<input type="text" id="nombre">
+					</th>
+					<th>
+						<label for="precio">Precio</label>
+						<input type="text" id="precio">
+					</th>
+					<th>
+						<label for="descripcion">Descripcion</label>
+						<input type="text" id="descripcion">
+					</th>
+
+					<th>
+						<button type="submit">Guardar producto</button>
+					</th>
+				</tr>
+			</table>
+
+		</form>
+	</div>
+
+
+
+	<script type="application/javascript" src="js/admin.js"></script>
+
+</body>
+
+</html>

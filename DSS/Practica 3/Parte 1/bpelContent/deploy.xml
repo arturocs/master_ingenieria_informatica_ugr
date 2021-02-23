@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:empleado="http://empleado" xmlns:iberia="http://iberia" xmlns:viaje="http://viaje" xmlns:vueling="http://vueling">
+  <process name="empleado:empleado">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="empleado:empleadoService" port="empleadoPort"/>
+    </provide>
+  </process>
+  <process name="viaje:viaje">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="viaje:viajeService" port="viajePort"/>
+    </provide>
+    <invoke partnerLink="empleado">
+      <service name="empleado:empleadoService" port="empleadoPort"/>
+    </invoke>
+    <invoke partnerLink="iberia">
+      <service name="iberia:iberiaService" port="iberiaPort"/>
+    </invoke>
+    <invoke partnerLink="vueling">
+      <service name="vueling:vuelingService" port="vuelingPort"/>
+    </invoke>
+  </process>
+  <process name="vueling:vueling">
+    <active>true</active>
+    <retired>false</retired>
+    <in-memory>false</in-memory>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="vueling:vuelingService" port="vuelingPort"/>
+    </provide>
+  </process>
+  <process name="iberia:iberia">
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="iberia:iberiaService" port="iberiaPort"/>
+    </provide>
+  </process>
+</deploy>

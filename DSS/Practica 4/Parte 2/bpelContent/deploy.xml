@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:comprador="http://comprador" xmlns:vendedor="http://vendedor">
+  <process name="comprador:Comprador">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="comprador:CompradorService" port="CompradorPort"/>
+    </provide>
+    <invoke partnerLink="VendedorPL">
+      <service name="vendedor:VendedorService" port="VendedorPort"/>
+    </invoke>
+  </process>
+  <process name="vendedor:Vendedor">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="vendedor:VendedorService" port="VendedorPort"/>
+    </provide>
+  </process>
+</deploy>
