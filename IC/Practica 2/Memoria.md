@@ -37,10 +37,8 @@
 ## Introducción
 
 En esta práctica se pide resolver el problema de la asignación cuadrática mediante algoritmos genéticos. Este problema se puede reducir encontrar un p que minimice la siguiente sumatoria:
-$$
-\sum_{i,j} w(i,j)d(p(i), p(j))
-$$
 
+![\sum _{a,b\in P}w(a,b)\cdot d(f(a),f(b))](https://wikimedia.org/api/rest_v1/media/math/render/svg/05d30494a1a27d09c83ad564ccaf41194006d89e)
 
 Donde w y d son dos matrices que vienen en el archivo `tai256c.dat` de la biblioteca [QAPLIB](http://www.seas.upenn.edu/qaplib/). Estas dos matrices tienen cada una una peculiaridad que permite aplicar ciertas optimizaciones. El código desarrollado hace uso de estas optimizaciones y por tanto no es válido para otros archivos de [QAPLIB](http://www.seas.upenn.edu/qaplib/).
 
