@@ -373,7 +373,7 @@ Una posible mejora para el algoritmo genético sería utilizar otro algoritmo de
 
 ## Conclusiones
 
-De las tres variantes implementadas la variante lamarckiana es la que mejores soluciones ofrece, aunque la baldwiniana se le queda cerca. Además según mis pruebas la variante lamarckiana es alrededor de 10 veces mas rápida que la baldwiniana. La variante estándar es la más rápida, pero como se ha visto [aquí](#Comparación-con-random_population()), sus soluciones son peores que las que consigue el algoritmo greedy.
+De las tres variantes implementadas la variante lamarckiana es la que mejores soluciones ofrece, aunque la baldwiniana se le queda cerca. Además según mis pruebas la variante lamarckiana es alrededor de 10 veces mas rápida que la baldwiniana. La variante estándar es la más rápida, pero como se ha visto [aquí](#comparación-con-random_population), sus soluciones son peores que las que consigue el algoritmo greedy.
 
 Entorno al final del desarrollo de este práctica me planteé si podía mejorar la mejor solución conocida, pues la había obtenido con una ejecución bastante pequeña. Fue entonces cuando diseñé la función `optimized_population()` y ejecuté el algoritmo con los parámetros mas óptimos que conocía:
 
