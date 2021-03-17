@@ -50,7 +50,7 @@ impl GeneticAlgorithm {
     /// la solución cada 50 generaciones
     pub fn execute(&self) -> (u64, Vec<usize>, Vec<(u32, u64)>) {
         let rng = &mut thread_rng();
-        let save_interval = 100;
+        let save_interval = 50;
         let mut best = (u64::MAX, vec![]);
         let mut history = Vec::with_capacity((self.generations / save_interval) as usize);
         let mut population = (self.population_generator)(self.population_size);
