@@ -267,7 +267,7 @@ Si se afina la vista, en esta comparación se puede apreciar como la variante la
 
 En la siguiente gráfica se puede ver en la variante estándar, para 100 generaciones, los resultados no mejoran pasado un tamaño de población de ~250.
 
-![poblacion_naive](/home/arturo/Escritorio/IC/Practica 2/img/poblacion_naive.svg)
+![poblacion_naive](./img/poblacion_naive.svg)
 
 
 
@@ -275,7 +275,7 @@ En la siguiente gráfica se puede ver en la variante estándar, para 100 generac
 
 Aquí podemos ver como los resultados de la variante baldwiniana mejoran conforme aumenta el tamaño de población. Solo he podido llegar a un tamaño de población de 300 debido a la lentitud de esta variante. De la misma forma que antes habría sido interesante poder tomar mas datos.
 
-![poblacion_baldwinian](/home/arturo/Escritorio/IC/Practica 2/img/poblacion_baldwinian.svg)
+![poblacion_baldwinian](./img/poblacion_baldwinian.svg)
 
 
 
@@ -329,7 +329,7 @@ Para estas gráficas la probabilidad de mutación está expresada sobre 100 en l
 
 Podemos ver como una probabilidad del 0% da los peores resultados, en cuanto pasamos a 1% los resultados mejoran inmediatamente. A partir de ahí siguen mejorando progresivamente hasta que alrededor del 45% los resultados empiezan a empeorar de nuevo. La explicación es que con un tamaño de mutación máxima de 255, una permutación inicialmente buena que sea seleccionada para ser mutada puede cambiar demasiado.
 
-![probabilidad_256](/home/arturo/Escritorio/IC/Practica 2/img/probabilidad_256.svg)
+![probabilidad_256](./img/probabilidad_256.svg)
 
 
 
