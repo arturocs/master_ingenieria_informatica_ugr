@@ -146,9 +146,9 @@ Se han diseñado tres funciones de generación de población inicial:
 Para la selección de población es necesaria una función que dada una posición en la lista de permutaciones ordenadas por coste, la convierta en una probabilidad de ser seleccionada, es decir número entre 0 y 1 proporcional a la posición. Idealmente esta función permitiría cambiar fácilmente el número de permutaciones que van a ser seleccionadas además de seleccionar mayoritariamente las primeras soluciones.
 
 La función que he usado es la siguiente:
-$$
-f(x,s)=\frac{1}{1+e^{x-s}}
-$$
+
+`f(x,s)=1/(1+e^(x-s))`
+
 Las variables de entrada son la posición en la lista ordenada de soluciones y el numero de individuos que se quiere que sobrevivan. Si dibujamos la función con s = 10, podemos ver como de 0 a 5 la probabilidad de ser seleccionado es prácticamente uno, entre cinco y diez la probabilidad desciende considerablemente, en 10 la probabilidad es 0.5, de 10 a 15 la probabilidad sigue descendiendo y de 15 en adelante es prácticamente cero.
 
 
