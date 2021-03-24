@@ -20,23 +20,20 @@ impl Tai256c {
         Self(matrix)
     }
 
-    /// Devuelve las dimensiones de la submatriz de unos de la primera matriz.
-    const fn ones_in_first_matrix() -> usize {
-        92
-    }
+    /// Dimensiones de la submatriz de unos de la primera matriz.
+    const ONES: usize = 92;
 
     /// Calcula el coste de una solución.
     /// # Safety
     /// `permutation` debe una permutación de los números del 0 al 255.
     pub unsafe fn cost(&self, permutation: &[usize]) -> u64 {
-        let ones = Self::ones_in_first_matrix();
         let get_element = |i: usize, j: usize| {
             *(self.0)
                 .get_unchecked(*permutation.get_unchecked(i))
                 .get_unchecked(*permutation.get_unchecked(j)) as u64
         };
-        2 * (0..ones)
-            .map(|i| (i + 1..ones).map(|j| get_element(i, j)).sum::<u64>())
+        2 * (0..Self::ONES)
+            .map(|i| (i + 1..Self::ONES).map(|j| get_element(i, j)).sum::<u64>())
             .sum::<u64>()
     }
 
@@ -51,15 +48,15 @@ impl Tai256c {
         pos_a: usize,
         pos_b: usize,
     ) -> u64 {
-        let ones = Self::ones_in_first_matrix();
         let get_sol = |i| *sol.get_unchecked(i);
         let get_tai = |i: usize, j: usize| *self.0.get_unchecked(i).get_unchecked(j);
-        let k = (pos_b < ones && pos_a >= ones) || (pos_b >= ones && pos_a < ones);
+        let k = (pos_b < Self::ONES && pos_a >= Self::ONES)
+            || (pos_b >= Self::ONES && pos_a < Self::ONES);
 
         let cost_difference: i64 = (0..sol.len())
             .filter(|&i| i != pos_a && i != pos_b)
             .map(|i| {
-                let change_flow = -((i < ones && k) as i32);
+                let change_flow = -((i < Self::ONES && k) as i32);
                 let difference =
                     get_tai(get_sol(i), get_sol(pos_a)) - get_tai(get_sol(i), get_sol(pos_b));
                 (difference * change_flow) as i64
