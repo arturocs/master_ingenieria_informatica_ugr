@@ -33,7 +33,7 @@ impl Tai256c {
                 .get_unchecked(*permutation.get_unchecked(j)) as u64
         };
         2 * (0..Self::ONES)
-            .map(|i| (i + 1..Self::ONES).map(|j| get_element(i, j)).sum::<u64>())
+            .flat_map(|i| (i + 1..Self::ONES).map(move |j| get_element(i, j)))
             .sum::<u64>()
     }
 
