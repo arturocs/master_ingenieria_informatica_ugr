@@ -25,3 +25,6 @@
 [submodule "TID_MII"]
 	path = TID_MII
 	url = https://github.com/arturocs/TID_MII
+[submodule "EV_MII"]
+	path = EV_MII
+	url = https://github.com/arturocs/EV_MII
