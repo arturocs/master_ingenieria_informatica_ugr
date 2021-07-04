@@ -1,0 +1,27 @@
+[submodule "ASS_MII"]
+	path = ASS_MII
+	url = https://github.com/arturocs/ASS_MII
+[submodule "CC_MII"]
+	path = CC_MII
+	url = https://github.com/arturocs/CC_MII
+[submodule "CCSA_MII"]
+	path = CCSA_MII
+	url = https://github.com/arturocs/CCSA_MII
+[submodule "DES_MII"]
+	path = DES_MII
+	url = https://github.com/arturocs/DES_MII
+[submodule "IC_MII"]
+	path = IC_MII
+	url = https://github.com/arturocs/IC_MII
+[submodule "PGPI_MII"]
+	path = PGPI_MII
+	url = https://github.com/arturocs/PGPI_MII
+[submodule "SIGE_MII"]
+	path = SIGE_MII
+	url = https://github.com/arturocs/SIGE_MII
+[submodule "SSBW_MII"]
+	path = SSBW_MII
+	url = https://github.com/arturocs/SSBW_MII
+[submodule "TID_MII"]
+	path = TID_MII
+	url = https://github.com/arturocs/TID_MII
