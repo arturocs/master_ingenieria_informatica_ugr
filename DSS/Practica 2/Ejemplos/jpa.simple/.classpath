@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/software/db-derby-10.14.2.0-bin/lib/derby.jar"/>
-	<classpathentry kind="lib" path="C:/Users/software/eclipselink/jlib/jpa/jakarta.persistence_2.2.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/software/eclipselink/jlib/eclipselink.jar"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>

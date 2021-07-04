@@ -1,9 +1,0 @@
-[submodule "CC/crab-iot"]
-	path = CC/crab-iot
-	url = git@github.com:arturocs/crab-iot.git
-[submodule "CC/autoevaluacion-CC"]
-	path = CC/autoevaluacion-CC
-	url = git@github.com:arturocs/autoevaluacion-CC.git
-[submodule "DES/Practicas"]
-	path = DES/Practicas
-	url = git@github.com:arturocs/DES_UGR.git
