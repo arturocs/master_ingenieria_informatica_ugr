@@ -28,3 +28,6 @@
 [submodule "EV_MII"]
 	path = EV_MII
 	url = https://github.com/arturocs/EV_MII
+[submodule "TFM_MII"]
+	path = TFM_MII
+	url = https://github.com/arturocs/TFM_MII
